@@ -1,1 +1,76 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
+/* New Color Palette:
+* Lightest (Text):         #F1FAEE      (text, contrast with dark)
+* Dark Green (Primary):    #1D3557      
+* Light Green (Secondary): #A8DADC      (canvas background)
+* Reddish-Brown (Accent):  #E63946
+*/
+
+.bg-info {
+    background-color: #A8DADC !important; /* Light green for secondary backgrounds */
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: #1D3557;            /* Dark green for brand name & nav links for visibility */
+}
+
+.btn-info {
+    color: #F1FAEE;            /* Lightest shade for text on info button for contrast */
+    background-color: #A8DADC; /* Light green for button background */
+    border-color: #1D3557;     /* Dark green for button border */
+}
+
+.btn-primary {
+    color: #F1FAEE;            /* Lightest shade for text */
+    font-size: 150%;
+    background-color: #1D3557; /* Dark green for primary button background */
+    border-color: #E63946;     /* Reddish-brown for border to use as accent */
+    border-width: thick;
+}
+
+body {
+    background-color: #F1FAEE; /* Lightest shade for body background to follow the 60% rule */
+}
+
+.navbar-brand{
+    font-family: 'Caveat', cursive; /*change the font name for what you have*/
+    font-size: 2.25rem;
+}
+
+/* Custom styles for dropdown to match the new color palette */
+
+/* Style for the dropdown button */
+.btn-secondary {
+    color: #F1FAEE; /* Lightest color for text */
+    background-color: #E63946; /* Dark green for the button background */
+    border-color: #A8DADC; /* Light green for the button border */
+}
+
+/* Change dropdown button hover/focus styles */
+.btn-secondary:hover, .btn-secondary:focus {
+    color: #F1FAEE; /* Lightest color remains for text */
+    background-color: #A8DADC; /* Light green for background on hover/focus */
+    border-color: #1D3557; /* Dark green for border for emphasis */
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    background-color: #F1FAEE; /* Lightest color for dropdown background */
+    border-color: #A8DADC; /* Light green for border color */
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+    color: #1D3557; /* Dark green for text color */
+}
+
+/* Style for dropdown item hover */
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #F1FAEE; /* Lightest color for text on hover/focus */
+    background-color: #A8DADC; /* Light green for background on hover/focus */
+}
